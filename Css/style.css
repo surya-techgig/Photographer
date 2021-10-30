@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;600;700&display=swap');
+/* Deleting Default styles  */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Color Variables  */
+:root {
+    --primary-color: white;
+    --main-color: crimson;
+    --nav-color: rgba(42, 39, 39, 0.356);
+    --bg-color: #3D3D3D;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* HTML Scroll Smoothness */
+html {
+    scroll-behavior: smooth;
+}
+/* Selection Color For Sites  */
+::selection {
+    color: var(--primary-color);
+    background: var(--main-color);
+}
+button {
+    user-select: none;
+}
+/* Header Starts Here  */
+.navbar {
+    position: fixed;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    user-select: none;
+    background: transparent;
+}
+.logo_brand {
+    height: 10vh;
+    padding-left: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_brand h1{
+    color: var(--main-color);
+    padding-top: 10px;
+}
+.logo_brand p {
+    font-size: 15px;
+    float: right;
+    color: var(--primary-color);
+}
+.navlinks {
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.navlinks li {
+    list-style: none;
+}
+.navlinks li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.navlinks li:hover a {
+    color: var(--main-color);
+}
+.navbar .foonavlinks {
+    position: absolute;
+    display: none;
+}
+/* Main Section Starts here*/
+
+/* Home section starts here  */
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url(/Images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home .welcome {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-color);
+}
+.home .welcome h1 {
+    margin: 35px 0px;
+    font-size: 40px;
+}
+.home .welcome h1 {
+    letter-spacing: -5px;
+}
+.home .welcome h1 span:hover {
+    color: var(--main-color);
+}
+.home .welcome br {
+    display: none;
+}
+.home .welcome p {
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+.home .btn-group {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.home .btn-group a {
+    text-decoration: none;
+}
+.home .btn-group button {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--main-color);
+    color: var(--primary-color);
+}
+.btn-group button:hover {
+    background: var(--primary-color);
+    color: var(--main-color);
+    border: 1px solid var(--primary-color);
+}
+/* About Section Starts Here  */
+.about {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 30px;
+}
+.about-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.about .about-container {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: row;
+}
+.about-container .profile {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.about-container .profile img{
+    height: 100%;
+    width: 50%;
+}
+.about-container .details {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+.about-container .details h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.about-container .details p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.about-container .details ul {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.details button {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid var(--main-color);
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    background: var(--main-color);
+    color: var(--primary-color);
+}
+.details button:hover {
+    background: var(--primary-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+/* My Works Section Starts Here  */
+.gallery {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
+.gallery-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.gallery .gallery-con1 {
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.gallery .gallery-con1 img {
+    height: 100%;
+}
+.gallery .gallery-con2 {
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery .gallery-con2 img {
+    height: 100%;
+}
+.gallery .gallery-con3 {
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gallery .gallery-con3 img {
+    height: 100%;
+}
+.gallery .gallery-con1 img:hover {
+    opacity: 0.5;
+}
+.gallery .gallery-con2 img:hover {
+    opacity: 0.5;
+}
+.gallery .gallery-con3 img:hover {
+    opacity: 0.5;
+}
+/* Contact Section Starts Here */
+.contact {
+    height: 80vh;
+    width: 100%;
+    padding: 30px;
+}
+.contactus-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.contact-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-contain .contactinfo {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.contactinfo h3 {
+    font-size: 22px;
+    margin: 20px 0px;
+    text-align: center;
+}
+.contactinfo p {
+    font-size: 18px;
+    padding: 10px 100px;
+    color: var(--bg-color);
+}
+.contactinfo b{
+    color: black;
+}
+.socialicontitle {
+    margin: 0px;
+}
+.socialiconinfo {
+    position: relative;
+    top: -20px;
+    padding: 0px 0px;
+}
+.socialicons .icons{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.socialicons .icons .iconify {
+    font-size: 40px;
+    padding: 5px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    background: var(--main-color);
+}
+.icons .iconify:hover {
+    color: var(--main-color);
+    background: var(--primary-color);
+}
+/* Footer Section Starts Here */
+.footer {
+    height: 6vh;
+    color: var(--primary-color);
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    padding: 2px 15px;
+}
+.footer a {
+    color: var(--main-color);
+}
+.footer a:hover{
+    color: var(--primary-color);
+}
+
+/* Responsive Design Starts */
+/* For Small Screen */
+@media only screen and (max-width: 992px) {
+    .home .welcome {
+        height: 30%;
+        width: 70%;
+    }
+    .home .welcome h1 {
+        margin: 35px 0px;
+        font-size: 40px;
+    }
+    .home .btn-group {
+        width: 30%;
+        justify-content: space-around;
+    }
+    .about {
+        height: 100%;
+    }
+    .about-container .profile img{
+        height: 100%;
+        width: 65%;
+    }
+    .gallery {
+        height: 100%;
+    }
+    .gallery .gallery-con1 {
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between, center;
+    }
+    .gallery-con1 img {
+        margin: 20px 0px;
+        height: 200px;
+        width: 200px;
+    }
+    .gallery .gallery-con2 {
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-con2 img {
+        margin: 20px 0px;
+        height: 200px;
+        width: 350px;
+    }
+    .gallery .gallery-con3 {
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-con3 img {
+        margin: 20px 0px;
+        width: 350px;
+    }
+    .contact {
+        height: 100%;
+        padding: 30px 0px;
+    }
+    .contactus-title {
+        margin-bottom: 20px;
+    }
+    .contact .contactinfo {
+        height: 80vh;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .contactinfo h3 {
+        margin: 30px 0px;
+    }
+    .contactinfo p {
+        font-size: 18px;
+        padding: 10px 20px;
+        color: var(--bg-color);
+    }
+    .socialicons {
+        height: 50%;
+    }
+}
+/* For Tablet Device */
+@media only screen and (max-width: 768px){
+    .navlinks {
+        width: 70vw;
+    }
+    .logo_brand {
+        padding-left: 30px;
+    }
+    .logo_brand h1 {
+        font-size: 28px;
+    }
+    .logo_brand p {
+        font-size: 15px;
+        /* text-align: justify; */
+    }
+    .home .btn-group {
+        width: 45%;
+        justify-content: space-around;
+    }
+    .about .about-container {
+        flex-direction: column;
+    }
+    .about-container .details {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    .about-container .profile {
+        width: 100%;
+    }
+    .about-container .profile img {
+        width: 50%;
+    }
+}
+    /* For Mobile Device */
+@media only screen and (max-width: 425px) {
+    .navlinks {
+        position: absolute;
+        display: none;
+    }
+    .home .welcome {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .home .welcome br {
+        display: block;
+    }
+    .home .btn-group {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .home .btn-group button {
+        margin: 10px 0px;
+    }
+    .navbar .foonavlinks {
+        background: var(--nav-color);
+        position: fixed;
+        bottom: 0px;
+        list-style-type: none;
+        display: flex;
+        height: 8vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navbar .foonavlinks a {
+        color: var(--primary-color);
+        text-decoration: none;  
+        padding: 15px 20px;
+        font-size: 22px;
+        font-weight: 550;
+    }
+    .foonavlinks li:hover a {
+        color: var(--main-color);
+    }
+    .about-container .profile {
+        width: 100%;
+    }
+    .about-container .profile img {
+        width: 80%;
+    }
+    .about-container .details {
+        padding: 50px 15px;
+        text-align: center;
+    }
+    .about-container .details p {
+        text-align: justify;
+    }
+    .gallery-con1 img {
+        height: 200px;
+        width: 200px;
+    }
+    .gallery-con2 img {
+        height: 200px;
+        width: 250px;
+    }
+    .gallery-con3 img {
+        height: 200px;
+        width: 250px;
+    }
+    .contact {
+        height: 70vh;
+    }
+    .contactus-title {
+        margin-bottom: 10px;
+    }
+    .contact-contain {
+        height: 100%;
+    }
+    .contact .contactinfo {
+        height: 80%;
+        padding: 20px 10px;
+    }
+    .contactinfo h3 {
+        margin: 20px 0px;
+    }
+    .contactinfo p {
+        padding: 10px 15px;
+    }
+    .socialicons .icons .iconify {
+        font-size: 35px;
+        padding: 4px;
+    }
+}
+.navbar.sticky {
+    background: var(--nav-color);
+}
